@@ -1928,3 +1928,16 @@ html[lang="tr"] .form-error:not(:empty)::before {
     transform: none;
   }
 }
+/* TEMPORARY IMAGE VISIBILITY FIX */
+.category-media img[data-content-image],
+.portfolio-media img[data-content-image] {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 2 !important;
+}
+
+.category-media .media-placeholder,
+.portfolio-media .media-placeholder {
+  z-index: 1;
+}
